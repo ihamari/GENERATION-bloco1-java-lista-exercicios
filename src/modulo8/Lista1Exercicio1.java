@@ -17,22 +17,23 @@ public class Lista1Exercicio1 {
 		
 		System.out.println("Deseja considerar um intervalo aberto ou fechado?"
 				+ "\n 1 - Para intervalo aberto (inclui o primeiro e o último número)"
-				+ "\n 2 - Para intervalo fechado (considera apenas os números entre eles, sem incluir os limites)");
+				+ "\n 2 - Para intervalo fechado (considera apenas os números entre eles, sem incluir os limites)"
+				+ "\nDigite o tipo de intervalo: ");
+		
 		abertoFechado = leia.nextInt();
 		
-		System.out.print("Digite o primeiro número do intervalo: ");
-		primeiroNumero = leia.nextInt();
-		
-		System.out.print("Digite o último número do intervalo: ");
-		ultimoNumero = leia.nextInt();
-			
-		if(primeiroNumero>ultimoNumero) {
-			System.out.println("Intervalo inválido!");
-		}
-		else {
-			switch(abertoFechado) {
-				case 1:
-					System.out.println("\nNo Intervalo entre " + primeiroNumero + " e " + ultimoNumero + ":\n");
+		switch(abertoFechado) {
+			case 1:
+				System.out.print("Digite o primeiro número do intervalo: ");
+				primeiroNumero = leia.nextInt();
+				
+				System.out.print("Digite o último número do intervalo: ");
+				ultimoNumero = leia.nextInt();
+				
+				if(primeiroNumero>ultimoNumero) {
+					System.out.println("Intervalo inválido!");
+				}
+				else {
 					for(int i = primeiroNumero; i<= ultimoNumero; i++) {
 						if( i%3 == 0 && i%5 == 0 ){
 							System.out.println(i + " é múltiplo de 3 e 5");
@@ -42,10 +43,21 @@ public class Lista1Exercicio1 {
 					if(totalMultiplos == 0) {
 						System.out.println("Não existe multiplos de 3 e 5!");
 					}
-				break;
+				}
 				
-				case 2: 
-					System.out.println("\nNo Intervalo entre " + primeiroNumero + " e " + ultimoNumero + ":\n");
+				
+				break;
+			case 2:
+				System.out.print("Digite o primeiro número do intervalo: ");
+				primeiroNumero = leia.nextInt();
+				
+				System.out.print("Digite o último número do intervalo: ");
+				ultimoNumero = leia.nextInt();
+				
+				if(primeiroNumero>ultimoNumero) {
+					System.out.println("Intervalo inválido!");
+				}
+				else {
 					for(int i = primeiroNumero+1; i<ultimoNumero; i++) {
 						if( i%3 == 0 && i%5 == 0 ){
 							System.out.println(i + " é múltiplo de 3 e 5");
@@ -55,14 +67,63 @@ public class Lista1Exercicio1 {
 					if(totalMultiplos == 0) {
 						System.out.println("Não existe multiplos de 3 e 5!");
 					}
+				}
 				break;
 				
-				default:
-					System.out.println("Opção de intervalo inválida!");
-			}
-			
-			
+			default:
+				System.out.println("Opção de intervalo inválida!");
 		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 	}
