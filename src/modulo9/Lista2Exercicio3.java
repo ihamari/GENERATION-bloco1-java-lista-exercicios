@@ -2,7 +2,7 @@ package modulo9;
 
 import java.util.Scanner;
 
-public class Lista2Exercicio1 {
+public class Lista2Exercicio3 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
