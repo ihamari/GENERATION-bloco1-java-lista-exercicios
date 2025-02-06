@@ -22,7 +22,7 @@ public class Lista3Exercicio5 {
 		}while(numero!=0);
 		
 		System.out.print("A soma dos números positivos é: " + total);
-
+		
 	}
 
 }
